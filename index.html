@@ -213,8 +213,8 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <h1 id="P1-神经网络和深度学习"><a href="#P1-神经网络和深度学习" class="headerlink" title="P1 神经网络和深度学习"></a>P1 神经网络和深度学习</h1><h2 id="logistic回归"><a href="#logistic回归" class="headerlink" title="logistic回归"></a>logistic回归</h2><p>logistic回归是一个学习算法,用在监督学习问题中,输出标签y是0或1时,属于一个二元分类问题,如输入一张猫图,你希望有一个算法,可以给出一个预测值$\hat{y}$,更正式的说$\hat{y}$是一个概率,当输入特征x满足条件时$\hat{y}$就是1,说明算法识别到输入的图片是一张猫图,相反,不满足条件时$\hat{y}$就是0.<br>logistic回归的参数$w$和$b$,$w$是n_x维向量,$b$是一个实数.</p>
-<h2 id="激活函数"><a href="#激活函数" class="headerlink" title="激活函数"></a>激活函数</h2><p>已知参数$w$和$b$,如何计算预测值$\hat{y}$呢.<br>可以尝试$\hat{y}=w^T<em>x+b$,但是这个并不可靠,因为输入特征不符合线性回归,因此这不是一个很好的二元分类算法,因为你希望$\hat{y}$是$y=1$的概率,所以$\hat{y}$的值应该介于0和1之间,但实际上$\hat{y}=w^T*x+b$是很难实现的,其值可以大于1或者为负数,这样的概率是没有意义的.<br>所以logistic回归中,我们的输出$\hat{y}$等于sigmoid的函数作用到这个量上.<br>公式为$\hat{y}=G(z)=G(w^T</em>+b)$.</p>
+    <h2 id="logistic回归"><a href="#logistic回归" class="headerlink" title="logistic回归"></a>logistic回归</h2><p>logistic回归是一个学习算法,用在监督学习问题中,输出标签y是0或1时,属于一个二元分类问题,如输入一张猫图,你希望有一个算法,可以给出一个预测值$\hat{y}$,更正式的说$\hat{y}$是一个概率,当输入特征x满足条件时$\hat{y}$就是1,说明算法识别到输入的图片是一张猫图,相反,不满足条件时$\hat{y}$就是0.<br>logistic回归的参数$w$和$b$,$w$是n_x维向量,$b$是一个实数.</p>
+<h2 id="激活函数"><a href="#激活函数" class="headerlink" title="激活函数"></a>激活函数</h2><p>已知参数$w$和$b$,如何计算预测值$\hat{y}$呢.<br>可以尝试$\hat{y}=w^T<em>x+b$,但是这个并不可靠,因为输入特征不符合线性回归,因此这不是一个很好的二元分类算法,因为你希望$\hat{y}$是$y=1$的概率,所以$\hat{y}$的值应该介于0和1之间,但实际上$\hat{y}=w^T</em>x+b$是很难实现的,其值可以大于1或者为负数,这样的概率是没有意义的.<br>所以logistic回归中,我们的输出$\hat{y}$等于sigmoid的函数作用到这个量上.<br>公式为$\hat{y}=G(z)=G(w^T*+b)$.</p>
 
     
 
